@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+main {
+}
+
+section {
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 200, 20, 0.88);
+}
+
+.content {
+  padding: 1rem;
+}
+
+.button {
+  width: 50%;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  background: #ffc814;
+}
+
+/**************** header  *****************/
+
+/**************** intro  *****************/
+
+#intro {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 200, 20, 0.35) 0%,
+    rgba(255, 200, 20, 0) 100%
+  );
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 20px;
+  background-color: unset;
+}
+
+/**************** features  *****************/
+
+#features {
+}
+
+/**************** team  *****************/
+
+/**************** contact  *****************/
+
+/**************** footer  *****************/

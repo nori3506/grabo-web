@@ -33,7 +33,6 @@ li {
 }
 
 nav {
-  flex: 32%;
   display: none;
 }
 
@@ -108,7 +107,7 @@ nav a {
 
 header {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 1rem;
   display: flex;
   flex-flow: nowrap;
@@ -117,9 +116,13 @@ header {
 }
 
 .header-image {
-  flex: 0 0 32%;
   justify-content: center;
   display: flex;
+}
+
+.header-image img {
+  width: 100px;
+  height: 45px;
 }
 
 .get-button {
@@ -161,40 +164,13 @@ header {
   font-weight: 700;
 }
 
-.menu-trigger {
-  padding: 0 1rem;
-  position: relative;
-  width: 50px;
-  height: 44px;
-  background: none;
-  border: none;
-  appearance: none;
-  cursor: pointer;
-}
-.menu-trigger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  border-radius: 4px;
-}
-.menu-trigger span:nth-of-type(1) {
-  top: 0;
-}
-.menu-trigger span:nth-of-type(2) {
-  top: 20px;
-}
-.menu-trigger span:nth-of-type(3) {
-  bottom: 0;
-}
-
 #btn-trigger {
   position: relative;
-  width: 50px;
-  height: 44px;
+  width: 35px;
+  height: 34px;
   cursor: pointer;
 }
+
 #btn-trigger span {
   position: absolute;
   left: 0;
@@ -203,18 +179,22 @@ header {
   background-color: #fff;
   border-radius: 4px;
 }
+
 #btn-trigger,
 #btn-trigger span {
   display: inline-block;
   transition: all 0.5s;
   box-sizing: border-box;
 }
+
 #btn-trigger span:nth-of-type(1) {
   top: 0;
 }
+
 #btn-trigger span:nth-of-type(2) {
-  top: 20px;
+  top: 15px;
 }
+
 #btn-trigger span:nth-of-type(3) {
   bottom: 0;
 }
@@ -329,23 +309,24 @@ header {
 form {
   display: flex;
   flex-flow: column;
-  gap: 2rem;
 }
 
 .form-element {
   display: flex;
   flex-flow: column;
   gap: 0.3rem;
+  padding: 1rem 0;
 }
 
 input {
   padding: 0 1rem;
   border-radius: 10px;
   height: 56px;
+  border: 1px solid black;
 }
 
 textarea {
-  border: 2px solid;
+  border: 1px solid black;
   border-radius: 10px;
   padding: 1rem;
 }
@@ -366,8 +347,9 @@ footer {
     background: none;
   }
 
-  .logo {
-    width: 150px;
+  .header-image img {
+    max-width: 100%;
+    height: auto;
   }
 
   h2 {

@@ -44,7 +44,6 @@ nav a {
 /**************** button  *****************/
 
 .white-button {
-  width: 40%;
   display: block;
   border-radius: 25px;
   padding: 0.5rem 0.5rem;
@@ -125,7 +124,6 @@ header {
 
 .get-button {
   display: flex;
-  flex: 0 0 32%;
   text-align: center;
   justify-content: flex-end;
 }
@@ -396,6 +394,10 @@ footer {
   nav ul {
     display: flex;
     gap: 1rem;
+  }
+
+  #btn-trigger {
+    display: none;
   }
 
   /**************** intro  *****************/

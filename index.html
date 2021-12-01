@@ -9,15 +9,22 @@
       src="https://kit.fontawesome.com/cbf2b7d4c6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Grabo!</title>
   </head>
   <body>
     <header class="bg-color">
-      <button class="menu-trigger">
+      <div id="btn-trigger" onclick="toggleOverlay()">
         <span></span>
         <span></span>
         <span></span>
-      </button>
+      </div>
       <nav class="nav">
         <ul>
           <li><a href="#features">Features</a></li>
@@ -33,6 +40,15 @@
 
     <main>
       <section id="intro">
+        <div id="overlay" onclick="toggleOverlay()">
+          <div class="overlayContent">
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="content">
           <div class="flex-nowrap">
             <div class="intro-left">

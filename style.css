@@ -5,6 +5,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #282625;
 }
 
 p {
@@ -31,6 +32,7 @@ li {
 }
 
 nav {
+  flex: 32%;
   display: none;
 }
 
@@ -41,6 +43,7 @@ nav a {
 /**************** button  *****************/
 
 .white-button {
+  width: 40%;
   display: block;
   border-radius: 25px;
   padding: 0.5rem 0.5rem;
@@ -111,6 +114,19 @@ header {
   flex-flow: nowrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-image {
+  flex: 0 0 32%;
+  justify-content: center;
+  display: flex;
+}
+
+.get-button {
+  display: flex;
+  flex: 0 0 32%;
+  text-align: center;
+  justify-content: flex-end;
 }
 
 .logo {
@@ -204,6 +220,7 @@ header {
 }
 
 .feature {
+  flex: 0 0 25%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -282,7 +299,7 @@ footer {
   padding: 1rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 730px) {
   body {
     background-image: url(/images/Header.png);
     background-repeat: no-repeat;

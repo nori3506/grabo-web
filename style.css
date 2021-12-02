@@ -1,6 +1,5 @@
 body {
   margin: 0 auto;
-  max-width: 1500px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -11,6 +10,7 @@ a {
 
 p {
   margin: 0;
+  line-height: 1.6rem;
 }
 
 h2 {
@@ -40,15 +40,21 @@ nav a {
   font-weight: 800;
 }
 
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
+}
+
 /**************** button  *****************/
 
 .white-button {
   display: block;
   border-radius: 25px;
-  padding: 0.5rem 0.5rem;
-  border: #808080 2px solid;
+  padding: 0.5rem 1rem;
   font-weight: 600;
   font-size: 18px;
+  background: white;
+  color: #282625;
 }
 
 .color-button {
@@ -79,6 +85,10 @@ nav a {
   text-align: center;
 }
 
+.align-left {
+  text-align: left;
+}
+
 .mb-extrasm {
   margin-bottom: 1rem;
 }
@@ -93,6 +103,14 @@ nav a {
 
 .mb-extra {
   margin-bottom: 6rem !important;
+}
+
+.pb-extrasm {
+  padding-bottom: 1rem;
+}
+
+.pb-small {
+  padding-bottom: 2rem;
 }
 
 .block-center {
@@ -231,11 +249,16 @@ header {
 }
 
 .intro-left {
-  align-self: center;
+  align-self: flex-end;
+  flex: 0 0 50%;
+}
+
+.intro-right {
+  flex: 0 0 50%;
 }
 
 .intro-text {
-  font-size: 20px;
+  font-size: 36px;
   background-color: unset;
 }
 
@@ -294,8 +317,12 @@ header {
 
 .name {
   font-weight: 600;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   border-bottom: 3px solid #ffc814;
+}
+
+.job-title {
+  padding: 0.3rem 1rem;
 }
 
 .fab {
@@ -325,6 +352,12 @@ input {
   border: 1px solid black;
 }
 
+input:focus,
+textarea:focus {
+  outline: solid 2px #ffc814;
+  border: none;
+}
+
 textarea {
   border: 1px solid black;
   border-radius: 10px;
@@ -336,7 +369,7 @@ footer {
   padding: 1rem;
 }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 800px) {
   body {
     background-image: url(/images/Header.png);
     background-repeat: no-repeat;
@@ -347,9 +380,17 @@ footer {
     background: none;
   }
 
+  .header-image {
+    flex: 25%;
+  }
+
+  .get-button {
+    flex: 25%;
+  }
+
   .header-image img {
-    max-width: 100%;
-    height: auto;
+    width: 130px;
+    height: 58.5px;
   }
 
   h2 {
@@ -362,6 +403,15 @@ footer {
     background-repeat: no-repeat;
     background-size: 20%;
   }
+
+  .white-button {
+    padding: 1rem 2.8rem;
+  }
+
+  .color-button {
+    width: 200px;
+  }
+
   /**************** header  *****************/
   header.bg-color {
     background: none;
@@ -372,6 +422,7 @@ footer {
 
   nav {
     display: block;
+    flex: 25%;
   }
   nav ul {
     display: flex;
@@ -388,6 +439,10 @@ footer {
   }
   .main-image {
     display: block;
+  }
+
+  .mobile-main-image {
+    display: none;
   }
 
   .flex-nowrap {

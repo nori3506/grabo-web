@@ -50,7 +50,7 @@ nav a {
 .white-button {
   display: block;
   border-radius: 25px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 600;
   font-size: 18px;
   background: white;
@@ -89,6 +89,10 @@ nav a {
   text-align: left;
 }
 
+.mt-small {
+  margin-top: 2rem !important;
+}
+
 .mb-extrasm {
   margin-bottom: 1rem;
 }
@@ -103,6 +107,10 @@ nav a {
 
 .mb-extra {
   margin-bottom: 6rem !important;
+}
+
+.pt-extrasm {
+  padding-top: 1rem;
 }
 
 .pb-extrasm {
@@ -133,9 +141,14 @@ header {
   align-items: center;
 }
 
+.humberger-area {
+  flex: 0 0 25%;
+}
+
 .header-image {
   justify-content: center;
   display: flex;
+  flex: 0 0 25%;
 }
 
 .header-image img {
@@ -144,6 +157,7 @@ header {
 }
 
 .get-button {
+  flex: 0 0 25%;
   display: flex;
   text-align: center;
   justify-content: flex-end;
@@ -298,6 +312,7 @@ header {
 
 .feature img {
   width: 180px;
+  height: 218.38px;
 }
 
 /**************** team  *****************/
@@ -333,9 +348,17 @@ header {
 
 /**************** contact  *****************/
 
+#contact h2 {
+  margin: 2rem 0 0;
+}
+
 form {
   display: flex;
   flex-flow: column;
+}
+
+form a {
+  margin-top: 1rem;
 }
 
 .form-element {
@@ -378,6 +401,10 @@ footer {
 
   .heading-background {
     background: none;
+  }
+
+  .humberger-area {
+    flex: unset;
   }
 
   .header-image {
@@ -457,6 +484,10 @@ footer {
 
   .relatifve {
     position: relative;
+  }
+
+  #intro .block-center {
+    margin: unset;
   }
 
   /**************** team  *****************/

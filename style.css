@@ -49,10 +49,10 @@ nav a {
 
 .white-button {
   display: block;
-  border-radius: 25px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 12px;
+  border-radius: 25px;
   background: white;
   color: #282625;
 }
@@ -271,6 +271,20 @@ header {
   flex: 0 0 50%;
 }
 
+.mobile-intro-text {
+  font-size: 36px;
+  background-color: unset;
+  margin: 0;
+}
+
+#mobile-title {
+  display: block;
+}
+
+#laptop-title {
+  display: none;
+}
+
 .intro-text {
   font-size: 36px;
   background-color: unset;
@@ -278,6 +292,10 @@ header {
 
 .main-image {
   display: none;
+}
+
+img.mobile-main-image {
+  padding-bottom: 2rem;
 }
 
 /**************** features  *****************/
@@ -488,6 +506,18 @@ footer {
 
   #intro .block-center {
     margin: unset;
+  }
+
+  #mobile-title {
+    display: none;
+  }
+
+  #laptop-title {
+    display: block;
+  }
+
+  .intro-left {
+    padding-top: 4rem;
   }
 
   /**************** team  *****************/
